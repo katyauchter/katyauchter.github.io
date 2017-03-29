@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Katy Auchter | Instructional Designer</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Pantovic Milos">
+
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="./css/slick.css">
+        <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>
+            <!-- Header menu -->
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="logo">
+                            <h1>Katy Auchter</h1>
+                            <h3>Instructional Designer</h3>
+                        </div>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class=""><a href="index.html">Portfolio</a></li>
+                            <li class=""><a href="about.html">About</a></li>
+                            <li class=""><a href="contact.php">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End of Header menu -->
+        </header>
+        <!-- Main cotent -->
+        <div class="band main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                        <div class="introduction">
+                            <h1>PyTutor</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 project-img">
+                                <img src="img/pytutor/pytutor01.png" alt="PyTutor" title="PyTutor" />
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 project-description">
+                                <p>I worked on PyTutor as my thesis project for the MA in Educational Technology program at Adelphi under the direction of Program Director Matt Curinga. PyTutor is a social educational platform that supports collaborative learning for novice computer programmers. </p>
+                                <p>The platform content is created by more experienced programmers and teachers, allowing educators to author questions, provide model solutions, decide the level of their question, organize their question with tagged keywords, and add unit tests for their content. The questions within the PyTutor system remain open for editing and revision. Students are able to practice their programming skills with this content. PyTutor determines the level of the student, and provides them questions of appropriate challenge.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 details">
+                            <p>The main sections I’ve worked on in PyTutor include the student report and creating unit tests.  The Student Report works by first collecting information about all of a user’s responses.  Students are able to respond up to ten times to a single question, and the Student Report allows users to analyze and compare these submissions.  The data collected from each of these submissions includes the actual code that was written, whether the question was answered correctly or incorrectly, the level of the question, and the total number of attempts.  This information is bound in a Python dictionary, and this information is distributed into two side by side on the Student Report page to show solved and unsolved questions per level.</p>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 details-img">
+                                    <img src="img/pytutor/pytutor02.png" />
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 details-description">
+                                    <p>The student report function begins by identifying the user and collecting all the responses they've made, and organizing them by the question they pertain to. (question I.D.)</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 details-img">
+                                    <img src="img/pytutor/pytutor03.png" />
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 details-description">
+                                    <p>Then, empty variables are created to hold the information that will be collected from the student responses. 'data' is the dictionary that will organize the responses based on whether they are correct or incorrect</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 details-img">
+                                    <img src="img/pytutor/pytutor04.png" />
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 details-description">
+                                    <p>Next, the function passes through all of the student responses, and organizes them by their corresponding question.  It then adds this information to the dictionary ‘data,’ and includes the running total of how many times they were responded to correctly and incorrectly.</p>
+                                </div>
+                            </div>
+
+                            <div class="row margin-bottom">
+                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 description-full-width">
+                                    <p>This information is then sent to the report’s html page, using the Django framework to change dynamic variables on the page.</p>
+                                    <img src="img/pytutor/pytutor05.png" />
+                                    <p>The information in the student response function is used to create two tables that display information about the questions and total number of student answers.</p>
+                                    <img src="img/pytutor/pytutor06.png" />
+                                    <p>And the questions are separated by whether they were answered correctly or incorrectly, and the page shows the student’s history regarding questions they’ve answered at different levels.</p>
+                                    <img src="img/pytutor/pytutor07.png" />
+                                    <p>The questions displayed in these charts are clickable items that show details about the question and student responses, including the question prompt, tags that categorize the question, the response history, model-response history,  and responses posted by other users.</p>
+                                    <img src="img/pytutor/pytutor08.png" />
+                                    <img src="img/pytutor/pytutor09.png" />
+                                    <p>Since this session creates 5 incorrect and 1 correct response for each question, we used this information to test the code against our expected results.   We ran the session 4 times, (twice generating a correct response, and twice generating 5 incorrect responses,) and set the highest question level at 2.  In this way, we were able to use assertion tests to determine that the current student level and number of correct and incorrect responses were matching the our expected results.</p>
+                                </div>
+                            </div>
+                            <div class="row margin-bottom">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 details-description">
+                                    <p>Since the current level utilizes the students highest level achieved (including calculations concerning the number correct,) we were able to predict that the current level of the student was level 2.    </p>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 details-img">
+                                    <img src="img/pytutor/pytutor10.png" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 description-full-width">
+                                    <p>This project has been paramount to shaping my understanding of how dynamic web based applications are created, managed, and ultimately run.  First hand experience working with objects, controllers, databases and mapping systems has allowed me to contextualize information that I learned in my introductory programming courses of my Ed Tech M.A., and apply the knowledge in ways that create usable products.  PyTutor has been instrumental my programming development, and I am eager to continue working on the project.  Moving forward, PyTutor will include social functionalities that allow students to create a network and send alert messages for help with a problem.  This will allow students to work together and receive answers in real time.  My experience in programming courses so far has already made clear the value that this software will have in a class environment, and this has been a great motivation while working on the project.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of main content -->
+
+        <!-- Footer section -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/katyauchter" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com/katyauchter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- Enf og footer section -->
+
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>

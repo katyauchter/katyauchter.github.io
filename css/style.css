@@ -1,0 +1,430 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 20, 2017, 9:44:38 AM
+    Author     : Milos Pantovic
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,800');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+.container {
+    overflow-x: hidden;
+}
+.container.container-slider {
+    overflow: visible;
+}
+h1 {
+    color: #000;
+    line-height: 1.2em;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+h3 {
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* HEADER */
+
+header {
+    padding: 0px;
+}
+@media (min-width:768px){
+    .navbar-inverse {
+        background: #f8f7fd;
+        border:none;
+        height: 120px;
+    }
+}
+.logo {
+    padding-top: 10px;
+    display: inline-block;
+    position: relative;
+}
+.logo h1 {
+    color: #000;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.2em;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 32px;
+    margin-top:15px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.logo h3 {
+    font-family: inherit;
+    line-height: 1.2em;
+    letter-spacing: 0px;
+    font-weight: 100;
+    font-size: 18px;
+    color: #666;
+    padding-top: 0px;
+    margin-top:0px;
+}
+
+nav ul.nav.navbar-nav {
+    float: right;
+    padding-top: 30px;
+}
+nav ul.nav.navbar-nav li a {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+
+    text-transform: none;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 40px;
+    display: inline-block;
+}
+nav ul.nav.navbar-nav li a:hover {
+    color: #000;
+}
+nav ul.nav.navbar-nav li.active a{
+    background: transparent;
+    color: #000;
+}
+nav ul.nav.navbar-nav li.active a:hover{
+    background: transparent;
+    color: #000;
+}
+
+/* END OF HEADER */
+
+/* MAIN CONTENT */
+
+.slider {
+    width: 100%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 315px;
+    padding: 10px;
+    position: absolute;
+    display: block;
+    object-fit: cover;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.caption {
+    position: absolute;
+    z-index: 990;
+    bottom: 0px;
+    background: #f0f0f0;
+    width: 100%;
+    padding: 15px;
+}
+.item {
+    position: relative;
+    border: 1px #999 solid;
+    height: 400px;
+}
+.item p {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+}
+.item a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 991;
+}
+.top-left-img {
+    object-position: top left;
+}
+/* PROJECT PAGE */
+
+.introduction h1 {
+    font-size: 28px;
+    text-align: center;
+}
+.introduction {
+    padding-bottom:30px;
+}
+.project-img {
+    overflow: hidden;
+}
+.project-img img{
+    width: auto;
+    max-height: 350px;
+    object-fit: cover;
+    position: relative;
+    display: block;
+    margin: 0px auto;
+}
+.padding-top {
+    padding-top:30px;
+}
+.padding-topx2 {
+    padding-top:80px;
+}
+.project-description p{
+    font-size: 15px;
+    text-align: justify;
+}
+.project-description a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.details p {
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.details-img img {
+    width: auto;
+    object-fit: cover;
+    max-width: 100%;
+    position: relative;
+}
+.description-full-width p{
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.description-full-width a {
+    text-decoration: underline;
+    color: #000;
+    font-weight: 600;
+}
+.description-full-width img {
+    display: block;
+    position: relative;
+    width: auto;
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+.header-img img{
+    display: block;
+    position: relative;
+    max-height: 300px;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin: 0px auto 20px auto;
+}
+.ready-img img{
+    display: block;
+    position: relative;
+    max-height: 450px;
+    width: 90%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin: 0px auto 40px auto;
+    object-position: top center;
+}
+.mytools-img img{
+    display: block;
+    position: relative;
+    height: 500px;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin: 0px auto 40px auto;
+    object-position: top center;
+}
+@media (min-width:992px) {
+    .mytools-description {
+        padding-top:200px;
+    }
+}
+.videoWrapper {
+    position: relative;
+    padding-bottom: 53.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: 40px 0px 30px 0px;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.margin-bottom {
+    margin-bottom: 40px;
+}
+.centred {
+    display: block;
+    position: relative;
+    margin: 0px auto;
+}
+.description-list {
+    padding-left: 5%;
+}
+.description-list li {
+    display: block;
+    list-style: none;
+}
+.img-section img{
+    width: auto;
+    max-height: 260px;
+    object-position: top left;
+    object-fit: cover;
+    display: block;
+    position: relative;
+}
+.pearson-img img{
+    width: 100%;
+    max-height: 350px;
+    object-position: top left;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    margin: 0px auto;
+}
+/* END OF PROJECT PAGE */
+
+/* ABOUT PAGE */
+
+.about p {
+    text-align: justify;
+}
+.cv-present {
+    border-top: 1px #666 solid;
+}
+/* END OF ABOUT PAGE */
+
+/* CONTACT PAGE */
+
+.contact-page {
+    background: #f8f7fd;
+}
+.contact-page hr {
+    height: 1px;
+    background-color: #bbb;
+    color: #bbb;
+    margin-top:60px;
+}
+.contact-form input{
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+}
+.contact-form label {
+    margin-top: 30px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.contact-form textarea {
+    height: 90px;
+    width: 100%;
+    padding: 10px;
+}
+.contact-form .submit {
+    padding: 12px 40px;
+    width: auto;
+    height: auto;
+    margin-top:30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    color: #fff;
+    outline: none;
+    border: 0px;
+    background: #000;
+}
+.input-description {
+    font-size: 12px;
+}
+.contact-form p {
+    font-size: 16px;
+}
+/* END OF CONTACT PAGE */
+
+/* END OF MAIN CONTENT */
+
+/* FOOTER */
+
+.social {
+    padding-top:20px;
+    padding-left: 15px;
+}
+.social li {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+}
+.social li a i{
+    color: #7a7a7a;
+    font-size: 28px;
+}
+.social li a {
+    margin-right: 10px;
+    opacity: 1;
+    transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+}
+.social li a:hover {
+    opacity: 0.6;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+}
+/* END OF FOOTER */
+
+
+@media (max-width:767px) {
+    .logo {
+        padding-left:15px;
+    }
+    .navbar-inverse {
+        background: #f8f7fd;
+        border:none;
+    }
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: #666;
+    }
+    nav ul.nav.navbar-nav {
+        padding-top:0px;
+        float: left;
+    }
+    nav ul.nav.navbar-nav li a {
+
+    }
+    .slider {
+        width: 80%;
+    }
+    .slick-slide {
+        height: 350px;
+    }
+}
