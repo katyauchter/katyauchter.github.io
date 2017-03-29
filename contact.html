@@ -58,7 +58,7 @@
                         <p>If you'd like to have a conversation, please use this form.</p>
                         <p>Good day to you!</p>
                         <hr>
-                        <form action="http://formspree.io/katyauchter@gmail.com" method="POST" name="contact-from">
+                        <form action="http://formspree.io/katyauchter@gmail.com" method="POST" name="contact-from" id="contact-form">
                             <div class="row">
                                 <label>You *</label>
                                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
@@ -98,7 +98,10 @@
                                 </div>
                             </div>
                         </form>
-						
+						<script type="text/javascript">
+                        $("#contact-form").ajaxForm({url: 'http://formspree.io/katyauchter@gmail.com', type: 'POST'})
+
+                        </script>
 						
                     </div>
                 </div>
