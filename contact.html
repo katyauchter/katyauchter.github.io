@@ -99,8 +99,22 @@
                             </div>
                         </form>
 						<script type="text/javascript">
-                        $("#contact-form").ajaxForm({url: 'http://formspree.io/katyauchter@gmail.com', type: 'POST'})
 
+                        $("#contact-form").submit(function(e) {
+
+                                $.ajax({
+                                       type: "POST",
+                                       url: "http://formspree.io/katyauchter@gmail.com",
+                                       data: $("#contact-form").serialize(), // serializes the form's elements.
+                                       success: function(data)
+                                       {
+                                           alert(data); // show response from the php script.
+                                       }
+                                     });
+
+                                e.preventDefault(); // avoid to execute the actual submit of the form.
+                        });
+                        
                         </script>
 						
                     </div>
