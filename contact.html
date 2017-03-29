@@ -99,16 +99,20 @@
                             </div>
                         </form>
 						<script type="text/javascript">
-
-                        $("#contact-form").submit(function(e) {
+                            var form = $("#contact-form");
+                            form.submit(function(e) {
 
                                 $.ajax({
                                        type: "POST",
                                        url: "https://formspree.io/katyauchter@gmail.com",
-                                       data: $("#contact-form").serialize(), // serializes the form's elements.
+                                       data: form.serialize(), // serializes the form's elements.
+                                       dataType: "json",
                                        success: function(data)
                                        {
-                                           alert(data); // show response from the php script.
+                                           var parent = form.parent();
+                                           form.hide();
+                                           parent.append("<h1>Thank you!</h1>");
+                                           console.log(data); // show response from the php script.
                                        }
                                      });
 
